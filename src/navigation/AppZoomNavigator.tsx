@@ -8,7 +8,7 @@ import { createStackNavigator, HeaderStyleInterpolators, CardStyleInterpolators 
 
 import { HomeScreen } from '../screens/Home/HomeScreen';
 import { SettingsScreen } from '../screens/Settings/SettingsScreen';
-import { NavigationScreen } from '../screens/Navigation/NavigationScreen';
+import { NavigationScreen } from './Navigation/NavigationScreen';
 import { Icon } from 'react-native-elements'
 import { cardStyleInterpolatorHelper, headerStyleInterpolatorHelper } from './Helpers';
 
