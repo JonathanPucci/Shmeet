@@ -1,6 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Animated, Dimensions, StyleSheet, Text, View } from "react-native";
+import { Animated, Dimensions, StyleSheet, Text, View, SafeAreaView } from "react-native";
 import BootSplash from "react-native-bootsplash";
+import { store } from './src/redux';
+import { Provider } from "react-redux"
+import AppNavigator from "./src/navigation/AppNavigator";
+
 
 let bootSplashLogo = require("./assets/bootsplash_logo.png");
 
@@ -45,17 +49,8 @@ let App = () => {
   }, [bootSplashLogoIsLoaded]);
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Hello there !
-      </Text>
-
-      <View style={styles.textBottom}>
-        <Text style={styles.center}>Brought to you by
-      </Text>
-        <Text style={styles.italic}>La Villa Bourguignon
-      </Text>
-      </View>
-
+    <Provider store={store}>
+      <AppNavigator />
       {bootSplashIsVisible && (
         <Animated.View
           style={[
@@ -75,12 +70,12 @@ let App = () => {
           />
         </Animated.View>
       )}
-    </View>
+    </Provider>
   );
 };
 
 const styles = StyleSheet.create({
-  
+
   container: {
     flex: 1,
     justifyContent: "center",
@@ -105,7 +100,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     bottom: 20
   },
-  center : {
+  center: {
     textAlign: "center",
   },
   italic: {
