@@ -3,7 +3,8 @@ import { Animated, Dimensions, StyleSheet, Text, View, SafeAreaView } from "reac
 import BootSplash from "react-native-bootsplash";
 import { store } from './src/redux';
 import { Provider } from "react-redux"
-import AppNavigator from "./src/navigation/AppNavigator";
+// import AppNavigator from "./src/navigation/AppNavigator";
+import AppNavigator from "./src/navigation/AppZoomNavigator";
 
 
 let bootSplashLogo = require("./assets/bootsplash_logo.png");

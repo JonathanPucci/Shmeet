@@ -1,18 +1,19 @@
-import React from "react";
-import { Text, View } from "react-native";
+import React, { Props } from "react";
+import { StyleSheet, Text, View } from "react-native";
+import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 
 import { styles } from "./styles";
 
 /**
- * The Home screen
+ * The Settings screen
  */
-export class HomeScreen extends React.Component {
+export class SettingsScreen extends React.Component {
 
 
     render() {
         return (
             <View style={styles.container}>
-                <Text style={styles.text}>Hello there from Home !</Text>
+                <Text style={styles.text}>Hello there from Settings !</Text>
 
                 <View style={styles.textBottom}>
                     <Text style={styles.center}>Brought to you by</Text>
