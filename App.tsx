@@ -5,7 +5,7 @@ import { store } from './src/redux';
 import { Provider } from "react-redux"
 // import AppNavigator from "./src/navigation/AppNavigator";
 import AppNavigator from "./src/navigation/AppZoomNavigator";
-
+import { ScrollView } from "react-native-gesture-handler";
 
 let bootSplashLogo = require("./assets/bootsplash_logo.png");
 
@@ -51,7 +51,7 @@ let App = () => {
 
   return (
     <Provider store={store}>
-      <AppNavigator />
+        <AppNavigator />
       {bootSplashIsVisible && (
         <Animated.View
           style={[

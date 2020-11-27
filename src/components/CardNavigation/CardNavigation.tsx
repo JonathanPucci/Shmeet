@@ -15,15 +15,16 @@ class CardNavigationScreenClass extends React.Component<any> {
     render() {
         return (
             <TouchableOpacity
-                onPress={() => { this.props.navigation.navigate("Popup", { screen: this.props.screenName }) }}
+                onPress={() => { this.props.navigation.navigate("Popup", { screen: this.props.routeSettings.screenName }) }}
             >
                 <Card>
                     <Icon
-                        name={this.props.screenIcon}
+                        name={this.props.routeSettings.screenIcon}
                         size={25}
                         color="brown"
+                        type={this.props.routeSettings.screenIconType}
                     />
-                    <Text>{"To " + this.props.screenName}</Text>
+                    <Text>{"To " + this.props.routeSettings.screenName}</Text>
                 </Card>
             </TouchableOpacity >
 

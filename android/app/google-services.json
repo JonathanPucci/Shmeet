@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "770694324116",
+    "firebase_url": "https://shmeet-5fdea.firebaseio.com",
+    "project_id": "shmeet-5fdea",
+    "storage_bucket": "shmeet-5fdea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770694324116:android:5a98e7bfcb677425e23981",
+        "android_client_info": {
+          "package_name": "com.shmeetapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770694324116-03biediivru8rk5kf3ne8gs9kf2f2pth.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzIC__5UDk7_dcP194W2FR-1z_zyOuenc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770694324116-03biediivru8rk5kf3ne8gs9kf2f2pth.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "770694324116-2mdtv8hpsv65t787sr3uuidgk65ulcq5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.shmeetapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -8,7 +8,8 @@ target 'ShmeetApp' do
 
   use_react_native!(:path => config["reactNativePath"])
   pod 'RNBootSplash', :path => '../node_modules/react-native-bootsplash'
-
+  pod 'Firebase/Analytics'
+  
   target 'ShmeetAppTests' do
     inherit! :complete
     # Pods for testing

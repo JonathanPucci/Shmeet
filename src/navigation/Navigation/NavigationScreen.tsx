@@ -16,8 +16,18 @@ const ROUTES = [
         screenIcon: "home"
     },
     {
+        screenName: "Games",
+        screenIcon: "nintendo-game-boy",
+        screenIconType : "material-community"
+    },
+    {
         screenName: "Settings",
         screenIcon: "settings"
+    },
+    
+    {
+        screenName: "ChatRoom",
+        screenIcon: "chat"
     }
 ]
 
@@ -35,7 +45,7 @@ class NavigationScreenClass extends React.Component<any> {
                     ROUTES.map((route, i, a) => {
                         return (
                             <View key={'nav'+i}>
-                                <CardNavigationScreen screenName={route.screenName} screenIcon={route.screenIcon} ></CardNavigationScreen>
+                                <CardNavigationScreen routeSettings={route}  ></CardNavigationScreen>
                             </View>
                         )
                     })
